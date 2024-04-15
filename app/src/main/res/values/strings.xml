@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">OrderManagerForAndroid</string>
+    <string name="menu_title">Order Manager</string>
+    <string name="donut_button_text">Donuts</string>
+    <string name="sandwich_button_text">Sandwiches</string>
+    <string name="coffee_button_text">Coffee</string>
+    <string name="current_order_button_text">Current Order</string>
+    <string name="order_list_button_text">Order List</string>
 </resources>
