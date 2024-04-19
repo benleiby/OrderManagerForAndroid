@@ -6,4 +6,6 @@
     <string name="coffee_button_text">Coffee</string>
     <string name="current_order_button_text">Current Order</string>
     <string name="order_list_button_text">Order List</string>
+    <string name="back">Back</string>
+    <string name="order_donuts">Order Donuts</string>
 </resources>
