@@ -8,4 +8,7 @@
     <string name="order_list_button_text">Order List</string>
     <string name="back">Back</string>
     <string name="order_donuts">Order Donuts</string>
+    <string name="plus">+</string>
+    <string name="display_of_a_delicious_donut">Display of a delicious donut</string>
+    <string name="add">ADD</string>
 </resources>
