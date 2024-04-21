@@ -14,6 +14,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
+/**
+ * @author Benjamin Leiby
+ */
 public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder> {
 
     private Context context;

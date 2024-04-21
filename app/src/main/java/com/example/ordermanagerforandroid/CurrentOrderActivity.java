@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * @author Benjamin Leiby
+ */
 public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapter.OnItemRemovedListener {
 
     DataManager globalData;

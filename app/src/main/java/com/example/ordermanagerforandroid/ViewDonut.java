@@ -1,5 +1,8 @@
 package com.example.ordermanagerforandroid;
 
+/**
+ * @author Benjamin Leiby
+ */
 public class ViewDonut extends Donut {
 
     private int image;

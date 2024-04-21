@@ -10,6 +10,9 @@ import java.util.ArrayList;
 
 import static com.example.ordermanagerforandroid.DonutVariety.*;
 
+/**
+ * @author Benjamin Leiby
+ */
 public class DonutActivity extends AppCompatActivity {
 
 

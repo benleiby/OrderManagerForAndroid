@@ -11,6 +11,9 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
+/**
+ * @author Benjamin Leiby
+ */
 public class OrderListActivity extends AppCompatActivity {
 
     ListView ordersListView;
