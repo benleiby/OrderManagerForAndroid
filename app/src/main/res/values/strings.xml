@@ -16,4 +16,6 @@
     <string name="total_amount">Total Amount :</string>
     <string name="sales_tax">Sales Tax :</string>
     <string name="subtotal">Subtotal :</string>
+    <string name="order">Order #</string>
+    <string name="cancel_order">CANCEL ORDER</string>
 </resources>

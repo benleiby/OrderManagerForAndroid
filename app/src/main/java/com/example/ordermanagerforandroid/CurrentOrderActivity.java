@@ -31,7 +31,7 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
         globalData = DataManager.getDataManager();
 
         // Set header txt
-        header = findViewById(R.id.currentOrderHeader);
+        header = findViewById(R.id.orderListHeader);
         String headerStr = "Order # " + globalData.getCurrentOrder().getORDER_NUMBER();
         header.setText(headerStr);
 

@@ -26,4 +26,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onOrderListButtonClick(View view) {
+        Intent intent = new Intent(MainActivity.this, OrderListActivity.class);
+        startActivity(intent);
+    }
+
 }

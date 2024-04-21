@@ -55,6 +55,7 @@
                 android:text="@string/order_list_button_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:id="@+id/orderListButton" android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle" android:textSize="24sp"/>
+                style="?android:attr/buttonBarButtonStyle" android:textSize="24sp"
+                android:onClick="onOrderListButtonClick"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
