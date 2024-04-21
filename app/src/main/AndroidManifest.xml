@@ -13,6 +13,9 @@
             android:theme="@style/Theme.OrderManagerForAndroid"
             tools:targetApi="31">
         <activity
+                android:name=".CurrentOrderActivity"
+                android:exported="false"/>
+        <activity
                 android:name=".DonutActivity"
                 android:exported="false"/>
         <activity

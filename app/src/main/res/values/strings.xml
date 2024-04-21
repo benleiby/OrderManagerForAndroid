@@ -11,4 +11,9 @@
     <string name="plus">+</string>
     <string name="display_of_a_delicious_donut">Display of a delicious donut</string>
     <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="total_amount">Total Amount :</string>
+    <string name="sales_tax">Sales Tax :</string>
+    <string name="subtotal">Subtotal :</string>
 </resources>

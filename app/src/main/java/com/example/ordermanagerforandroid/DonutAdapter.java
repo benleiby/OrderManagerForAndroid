@@ -96,9 +96,6 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
             builder.setPositiveButton("Add", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    // Handle adding item to cart
-                    // You can access the item at the clicked position using items.get(position)
-                    // Perform the necessary action here
 
                     Donut donut = new Donut(items.get(position).getVariety(), Integer.parseInt(quantitySelected));
                     donut.setFlavor(items.get(position).getFlavor());
