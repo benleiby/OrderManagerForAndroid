@@ -1,6 +1,7 @@
 package com.example.ordermanagerforandroid;
 
 /**
+ * Container to associate images with donut MenuItems.
  * @author Benjamin Leiby
  */
 public class ViewDonut extends Donut {

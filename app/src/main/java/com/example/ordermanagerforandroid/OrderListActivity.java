@@ -12,6 +12,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 /**
+ * Allows the user to view the order history and cancel orders.
  * @author Benjamin Leiby
  */
 public class OrderListActivity extends AppCompatActivity {
@@ -26,6 +27,11 @@ public class OrderListActivity extends AppCompatActivity {
     Context context;
     TextView totalAmountDisplay;
 
+    /**
+     * Configure the orderSpinner, ListView and total amount display.
+     * Sets the listener for the cancel order button.
+     * @param savedInstanceState savedInstanceState.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -79,6 +85,10 @@ public class OrderListActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Get a String [] of all order numbers on the orderList.
+     * @return String [] of order numbers.
+     */
     private String [] getOrderNumbers() {
 
         ArrayList<String> output = new ArrayList<>();
@@ -89,6 +99,11 @@ public class OrderListActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Returns the current order as an array of MenuItem descriptions.
+     * @param orderNumber to get items from.
+     * @return String [] of MenuItem descriptions.
+     */
     private String [] getOrderAsArray(int orderNumber) {
 
         ArrayList<String> output = new ArrayList<>();
@@ -104,6 +119,10 @@ public class OrderListActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Handle cancelling of an order.
+     * @param view of cancel order button.
+     */
     public void onCancelOrderButtonClicked(View view) {
 
         if (orderSpinner.getSelectedItem() == null) {
@@ -134,7 +153,10 @@ public class OrderListActivity extends AppCompatActivity {
 
     }
 
-
+    /**
+     * Navigate back to the main activity. End the current activity.
+     * @param view Button view of back button.
+     */
     public void back(View view) {
         finish();
     }

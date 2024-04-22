@@ -19,6 +19,10 @@ public final class DataManager {
         orderList = new ArrayList<Order>();
     }
 
+    /**
+     * Returns an instance of the globalData.
+     * @return globalData.
+     */
     public synchronized static DataManager getDataManager() {
         if (dataManager == null) dataManager = new DataManager();
         return dataManager;

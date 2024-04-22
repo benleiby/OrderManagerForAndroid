@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 /**
+ * Window that allows the user to view the current order.
+ * Allows the user to place order and cancel items from the order.
  * @author Benjamin Leiby
  */
 public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapter.OnItemRemovedListener {
@@ -25,7 +27,11 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
     RecyclerView rcView;
     ItemAdapter adapter;
 
-
+    /**
+     * Initialization of header, RCView, and totalDisplays.
+     * Creates a listener to detect a removed item action from a ViewHolder.
+     * @param savedInstanceState savedInstanceState.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -56,6 +62,9 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
 
     }
 
+    /**
+     * Sets text of price displays according to the current state of the current order.
+     */
     private void updatePrices() {
 
         @SuppressLint("DefaultLocale") String subTotalStr = String.format("$ %.2f", globalData.getCurrentOrder().subTotal());
@@ -67,6 +76,10 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
 
     }
 
+    /**
+     * Sets the RcView to account for changes in the state of the currentOrder.
+     * For example, if an item is added or removed.
+     */
     private void updateRcView() {
 
         items = globalData.getCurrentOrder().getItems();
@@ -75,6 +88,10 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
 
     }
 
+    /**
+     * Navigate back to the main activity. End the current activity.
+     * @param view Button view of back button.
+     */
     public void back(View view) {
         finish();
     }
@@ -85,6 +102,10 @@ public class CurrentOrderActivity extends AppCompatActivity implements ItemAdapt
         updateRcView();
     }
 
+    /**
+     * Handle order placement. Prompts user for confirmation and finishes the activity.
+     * @param view Button view of the place order button.
+     */
     public void onPlaceOrderButtonClicked(View view) {
 
         if (globalData.getCurrentOrder().getItems().isEmpty()) {

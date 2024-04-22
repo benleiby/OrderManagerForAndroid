@@ -15,6 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 /**
+ * Adapter for DonutRCView.
  * @author Benjamin Leiby
  */
 public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder> {
@@ -23,6 +24,11 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
     private ArrayList<ViewDonut> items;
     private ArrayAdapter<String> quantityAdapter;
 
+    /**
+     * Parameterized constructor. Defines spinner items and sets members.
+     * @param context of the activity.
+     * @param items to display.
+     */
     public DonutAdapter(Context context, ArrayList<ViewDonut> items) {
 
         this.context = context;
@@ -59,6 +65,10 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         return items.size();
     }
 
+    /**
+     * ViewHolder for ViewDonut.
+     * @author Benjamin Leiby
+     */
     public class DonutHolder extends RecyclerView.ViewHolder {
 
         private TextView itemName, itemPrice;
@@ -67,6 +77,10 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
         private Spinner quantitySpinner;
         private ConstraintLayout parentLayout;
 
+        /**
+         * Initialize fields, add button and quantity spinner.
+         * @param itemView of displayed elements.
+         */
         public DonutHolder(@NonNull @NotNull View itemView) {
 
             super(itemView);
@@ -89,6 +103,10 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.DonutHolder>
 
         }
 
+        /**
+         * Prompt user for add confirmation. Display message to notify completion.
+         * @param position of RCView.
+         */
         private void showDialog(int position) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());

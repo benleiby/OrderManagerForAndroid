@@ -16,6 +16,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 /**
+ * Adapter for displaying MenuItems on RCView.
  * @author Benjamin Leiby
  */
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
@@ -28,6 +29,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
         this.items = items;
     }
 
+    /**
+     * Interface to create communication between adapter and activity.
+     * Alerts the activity that an item has been removed, and therefore prompts a view update.
+     */
     public interface OnItemRemovedListener {
         void onItemRemoved();
     }
@@ -61,11 +66,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
         return items.size();
     }
 
+    /**
+     * ViewHolder for a MenuItem.
+     */
     public class ItemHolder extends RecyclerView.ViewHolder {
 
         private TextView description;
         private Button removeButton;
 
+        /**
+         * Configure description and set listener for the remove button.
+         * @param itemView of elements to be displayed.
+         */
         public ItemHolder(@NonNull @NotNull View itemView) {
 
             super(itemView);
@@ -84,6 +96,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
 
         }
 
+        /**
+         * Shows dialog to confirm the removal of an item. Displays a toast to notify user of completion.
+         * @param position of removed item.
+         */
         private void showDialog(int position) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());

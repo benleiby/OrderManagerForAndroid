@@ -11,11 +11,16 @@ import java.util.ArrayList;
 import static com.example.ordermanagerforandroid.DonutVariety.*;
 
 /**
+ * Window that allows the user to add donuts to the order.
  * @author Benjamin Leiby
  */
 public class DonutActivity extends AppCompatActivity {
 
 
+    /**
+     * Configure the RCView.
+     * @param savedInstanceState savedInstanceState.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,10 +35,18 @@ public class DonutActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Navigate back to the main activity. End the current activity.
+     * @param view Button view of back button.
+     */
     public void back(View view) {
         finish();
     }
 
+    /**
+     * Get all possible combinations of donut varieties and flavors along with images.
+     * @return ArrayList<ViewDonut> that includes images.
+     */
     private ArrayList<ViewDonut> getAvailableDonuts() {
 
         int [] images = getItemImages();
@@ -63,6 +76,10 @@ public class DonutActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Get item image resources.
+     * @return int [] containing image resource ids.
+     */
     private int [] getItemImages() {
 
         return new int[] {
