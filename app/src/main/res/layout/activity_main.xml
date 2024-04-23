@@ -29,14 +29,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="166dp" android:id="@+id/donutButton" android:textSize="48sp"
                 android:onClick="onDonutButtonClick"/>
+
         <Button
-                android:text="@string/coffee_button_text"
-                android:layout_width="match_parent"
-                android:layout_height="166dp" android:id="@+id/coffeeButton" android:textSize="48sp"/>
+            android:id="@+id/coffeeButton"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:onClick="onCoffeeButtonClick"
+            android:text="@string/coffee_button_text"
+            android:textSize="48sp" />
+
         <Button
-                android:text="@string/sandwich_button_text"
-                android:layout_width="match_parent"
-                android:layout_height="166dp" android:id="@+id/sandwichButton" android:textSize="48sp"/>
+            android:id="@+id/sandwichButton"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:onClick="onSandwichButtonClick"
+            android:text="@string/sandwich_button_text"
+            android:textSize="48sp" />
     </LinearLayout>
     <LinearLayout
             android:orientation="horizontal"

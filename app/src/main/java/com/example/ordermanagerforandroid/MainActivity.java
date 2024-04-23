@@ -21,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onCoffeeButtonClick(View view) {
+        Intent intent = new Intent(MainActivity.this, CoffeeActivity.class);
+        startActivity(intent);
+    }
+
+    public void onSandwichButtonClick(View view) {
+        Intent intent = new Intent(MainActivity.this, SandwichActivity.class);
+        startActivity(intent);
+    }
+
     public void onCurrentOrderButtonClick(View view) {
         Intent intent = new Intent(MainActivity.this, CurrentOrderActivity.class);
         startActivity(intent);

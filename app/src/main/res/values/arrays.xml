@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="bread_array">
+        <item>Bagel</item>
+        <item>Wheat</item>
+        <item>Sourdough</item>
+    </string-array>
+
+    <string-array name="protein_array">
+        <item>Beef</item>
+        <item>Fish</item>
+        <item>Chicken</item>
+    </string-array>
+
+    <string-array name="quantity_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="coffee_sizes_array">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
+
+</resources>
