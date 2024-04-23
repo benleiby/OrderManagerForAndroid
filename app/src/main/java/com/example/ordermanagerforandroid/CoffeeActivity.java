@@ -266,4 +266,13 @@ public class CoffeeActivity extends AppCompatActivity {
 
         builder.show();
     }
+
+    /**
+     * Provides the back button functionality
+     * @param view
+     */
+    public void back(View view) {
+        finish();
+    }
+
 }
